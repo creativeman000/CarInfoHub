@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Info Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #007BFF, #28a745);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    header p {
+      margin: 10px 0 0 0;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1581349706268-bb26d4a1f3c6?auto=format&fit=crop&w=1920&q=80');
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin: 0 20px;
+    }
+
+    .cta-button {
+      background-color: #fff;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      color: #007BFF;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e0f7fa;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-card .info {
+      padding: 15px;
+    }
+
+    .car-card .title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .car-card .price {
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .car-card .features {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .car-card .features li {
+      background: #f9f9f9;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #343a40;
+      color: white;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Car Info Hub</h1>
+    <p>Your ultimate guide to finding the perfect vehicle.</p>
+    <button class="cta-button">View All Cars</button>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Car Info Hub</h2>
+  </section>
+
+  <section class="section">
+    <h2>Explore Our Latest Models</h2>
+    <div class="car-grid">
+      <!-- Example car cards -->
+      <div class="car-card">
+        <img src="C:\Users\Admin\OneDrive\Desktop\car info hub\OIP.webp" alt="Sedan">
+        <div class="info">
+          <div class="title">Toyota Corolla</div>
+          <div class="price">15Lakh Rupees</div>
+          <ul class="features">
+            <li>City & Highway Efficiency</li>
+            <li>AWD & 4-wheel Drive</li>
+            <li>Advanced Safety Features</li>
+          </ul>
+        </div>
+      </div>
+      <div class="car-card">
+        <img src="C:\Users\Admin\OneDrive\Desktop\car info hub\download.webp" alt="SUV">
+        <div class="info">
+          <div class="title">Honda CR-V</div>
+          <div class="price">9Lakh Rupees</div>
+          <ul class="features">
+            <li>Off-road Capability</li>
+            <li>Excellent Fuel Efficiency</li>
+            <li>Smart Tech Features</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Choose Us?</h2>
+    <p>We provide accurate, up-to-date information on all vehicle models. Our team is dedicated to helping you make an informed decision.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Car Info Hub. All rights reserved.</p>
+    <div style="display: flex; gap: 15px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>
